@@ -25,8 +25,8 @@ public class CustomerRepository {
 
             Statement statement = connection.createStatement();
             statement.execute(createCustomerSQL);
-        } catch (SQLException se) {
-            se.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
 
     }
